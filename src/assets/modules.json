@@ -1,0 +1,74 @@
+[
+	{
+		"key": 1,
+		"title": "ELECTRICITY and MAGNETISM",
+		"lessons": [
+			{
+				"title": "Discovery of Magnetism"
+			},
+			{
+				"title": "Basic Principles of Magnetism"
+			},
+			{
+				"title": "Magnets and Magnetic Fields"
+			},
+			{
+				"title": "Electromagnetism"
+			},
+			{
+				"title": "Applications of Electromagnetic Induction"
+			}
+		],
+		"competencies": [
+			"discuss the history of magnetism;",
+			"describe the different kinds of magnets and their properties;",
+			"list some uses of permanent magnets;",
+			"explain what is meant by magnetic field and how it is detected;",
+			"describe magnetic field;",
+			"show how magnetic fields and electric currents are related;",
+			"describe the way an electromagnet is made and the kind of magnetic field it produces;",
+			"state the effect that a magnetic field has on electric current;",
+			"recognize the conditions under which a magnetic field can be used to produce electric current;",
+			"explain how the interaction of magnetic fields produces movement in a motor;",
+			"describe a generator and the way it produces electric energy; and",
+			"describe a transformer and explain how it works."
+		]
+	},
+	{
+		"key": 2,
+		"title": "ELECTROMAGNETIC SPECTRUM",
+		"lessons": [
+			{
+				"title": "Electromagnetic Wave Theory"
+			},
+			{
+				"title": "Electric and Magnetic Fields Together"
+			},
+			{
+				"title": "The Electromagnetic Spectrum"
+			},
+			{
+				"title": "Radio Waves"
+			},
+			{
+				"title": "Microwaves"
+			},
+			{
+				"title": "Infrared"
+			},
+			{
+				"title": "Visible Spectrum"
+			},
+			{
+				"title": "Ultraviolet Radiation, X-rays, Gamma Rays"
+			}
+		],
+		"competencies": [
+			"trace the development of the electromagnetic theory.",
+			"describe how electromagnetic (EM) wave is produced and propagated.",
+			"compare the relative wavelengths, frequencies and energies of the different regions of the electromagnetic spectrum.",
+			"cite examples of practical applications of the different regions of EM waves.",
+			"explain the effects of electromagnetic radiation on living things and the environment."
+		]
+	}
+]
