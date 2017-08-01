@@ -2,6 +2,8 @@
 	{
 		"key": 1,
 		"title": "ELECTRICITY and MAGNETISM",
+		"header_image": "/statics/module-1.png",
+		"header_color": "",
 		"lessons": [
 			{
 				"title": "Discovery of Magnetism"
@@ -37,6 +39,8 @@
 	{
 		"key": 2,
 		"title": "ELECTROMAGNETIC SPECTRUM",
+		"header_image": "/statics/module-2.png",
+		"header_color": "",
 		"lessons": [
 			{
 				"title": "Electromagnetic Wave Theory"
@@ -69,6 +73,43 @@
 			"compare the relative wavelengths, frequencies and energies of the different regions of the electromagnetic spectrum.",
 			"cite examples of practical applications of the different regions of EM waves.",
 			"explain the effects of electromagnetic radiation on living things and the environment."
+		]
+	},
+	{
+		"key": 3,
+		"title": "LIGHT: MIRRORS and LENSES",
+		"header_image": "/statics/module-3.png",
+		"header_color": "",
+		"lessons": [
+			{
+				"title": "Reflection of Light in Mirrors"
+			},
+			{
+				"title": "Laws of Reflection"
+			},
+			{
+				"title": "Mirror Left-Right Reversal and Multiple Images"
+			},
+			{
+				"title": "Types of Reflection and Reflection on Spherical Mirrors"
+			},
+			{
+				"title": "Images Formed By Curved Mirrors"
+			},
+			{
+				"title": "Refraction of Light in Lenses"
+			},
+			{
+				"title": "Images Formed by Lenses"
+			}
+		],
+		"competencies": [
+			"Predict the qualitative characteristics (location, orientation, type, and magnification) of images formed by plane and curved mirrors and lenses.",
+			"Determine the quantitative characteristics (location, orientation, type, and magnification) of images formed by plane and curved mirrors. and lenses.",
+			"Distinguish between converging and diverging mirrors and lenses.",
+			"Apply ray diagramming techniques in describing the characteristics and positions of images formed by mirrors and lenses.",
+			"Derive the mirror and lens equations.",
+			"Identify ways in which the properties of mirrors and lenses determine their use in optical instruments (e.g., cameras and telescopes)."
 		]
 	}
 ]

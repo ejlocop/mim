@@ -23,6 +23,8 @@ export default new VueRouter({
   routes: [
     { path: '/modules-1', component: load('pages/Module1') },
     { path: '/modules-2', component: load('pages/Module2') },
+    { path: '/modules-2', component: load('pages/Module3') },
+    { path: '/modules', component: load('Modules') },
     { path: '/', component: load('Index') },
     { path: '*', component: load('Error404') }
   ]

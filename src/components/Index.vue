@@ -1,67 +1,39 @@
 <template>
-  <q-layout>
-    <!-- Header -->
-    <div slot="header" class="toolbar">
-      <button class="hide-on-drawer-visible" @click="drawerOpen">
-        <i>menu</i>
-      </button>
-      <q-toolbar-title :padding="1">
-        MIM
-      </q-toolbar-title>
-    </div>
-    <!-- Left-side Drawer -->
-    <menu-drawer ref="drawer"></menu-drawer>
-
-    <!-- IF USING subRoutes only: -->
-    <!-- <router-view class="layout-view">
-      wew
-    </router-view> -->
-    <!-- OR ELSE, IF NOT USING subRoutes: -->
-    <div class="layout-view">
-      <module v-for="module in modules" 
-        key="module.key"
-        :module="module">    
-      </module>
-    </div>
-    <!-- Footer -->
-    <!-- <button v-back-to-top.animate="{offset: 1000, duration: 200}"
-      class="primary circular fixed-bottom-right animate-pop"
-      style="margin: 0 20px 20px 0">
-      <i>keyboard_arrow_up</i>
-    </button> -->
-  </q-layout>
+  <div class="layout-view text-center layout-padding"> 
+    <h2>Science 101</h2>
+    <h4>FORCES, MOTION and ENERGY</h4>
+    <q-gallery-slider :src="gallery"
+      :infinite="true"
+      :autoplay="5000">
+    </q-gallery-slider>
+    <router-link
+      to="/modules">
+      <button class="primary start-button" >Start</button>
+    </router-link>
+  </div>
 </template>
 
 <script>
-import MenuDrawer from './partials/Menu'
-import DrawerMixin from '../assets/js/mixins/Drawer'
-import ModuleComponent from './Module'
-
-import modules from '../assets/modules.json'
-
 export default {
-  mixins: [DrawerMixin],
-  components: {
-    'menu-drawer': MenuDrawer,
-    'module': ModuleComponent
-  },
   data () {
     return {
-      modules,
+      gallery: [
+        "../statics/1.jpg",
+        "../statics/2.jpg",
+        "../statics/3.jpg"
+      ]
     }
-  },
-  mounted () {
-    console.log(this.modules)
-  },
-  methods: {
-
-  },
+  }
 }
 </script>
 
 <style>
 .layout-view {
-  padding: 10px;
+  background: #F2C037;
+  color: #444;
+}
+.start-button {
+  margin-top: 20px;
 }
 </style>
 

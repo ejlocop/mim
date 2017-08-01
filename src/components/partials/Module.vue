@@ -38,7 +38,7 @@
 	</div>	
 </template>
 <script>
-import Dialog from '../assets/js/mixins/Dialog'
+import Dialog from '../../assets/js/mixins/Dialog'
 export default {
 	mixins: [Dialog],
 	props: {
