@@ -38,7 +38,7 @@
 
 			moduleLink () {
 				return {
-					path: `modules-${this.module.key}`,
+					path: `modules/${this.module.key}`,
 					exact: true
 				}
 			}
@@ -46,18 +46,24 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 .card {
 	background: white;
+
+	.card-title {
+		color: white;
+		padding: 8px 16px;
+	}
+
+	.card-content {
+		font-size: .9rem;
+
+		p {
+			margin-bottom: 1px;
+		}
+	}
 }
-.card-title {
-	color: white;
-	padding: 8px 16px;
-}
-.card-content {
-	font-size: .9rem;
-}
-.card-content p {
-	margin-bottom: 1px;
+.q-parallax-image img {
+	z-index: 1;
 }
 </style>

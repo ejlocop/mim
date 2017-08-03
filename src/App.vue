@@ -31,4 +31,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.layout-view {
+  background: #F2C037;
+  color: #444;
+}
+</style>

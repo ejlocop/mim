@@ -13,14 +13,14 @@
         Modules
       </q-drawer-link>
       <hr>
-      <q-drawer-link :to="{path: '/modules-1', exact: true}">
+      <q-drawer-link :to="{path: '/modules/1', exact: true}">
         Module 1
       </q-drawer-link>
-      <q-drawer-link :to="{path: '/modules-2', exact: true}">
+      <q-drawer-link :to="{path: '/modules/2', exact: true}">
         Module 2
       </q-drawer-link>
-      <q-drawer-link :to="{path: '/modules-3', exact: true}">
-        Module 2
+      <q-drawer-link :to="{path: '/modules/3', exact: true}">
+        Module 3
       </q-drawer-link>
     </div>
   </q-drawer>
