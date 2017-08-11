@@ -35,8 +35,21 @@ export default new VueRouter({
     { 
       path: `/modules/:id([1-${modules.length}]+)`, 
       component: load('partials/ModuleNew'),
-      props: filterModule
+      props: filterModule,
+      // children: [
+      //   {
+      //     path: '',
+      //     component: load('partials/ModuleNew'),
+      //     props: filterModule
+      //   },
+      //   {
+      //     path: `lessons/:lessonId(\\d+)`,
+      //     component: load('partials/LessonPage'),
+      //     props: filterModule
+      //   }
+      // ],
     },
+    { path: '/modules/:', component: load('Modules') },
     // { path: '/modules/2', component: load('pages/Module2') },
     // { path: '/modules/2', component: load('pages/Module3') },
     { path: '/modules', component: load('Modules') },
