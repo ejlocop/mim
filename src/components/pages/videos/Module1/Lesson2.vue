@@ -5,14 +5,14 @@
 				<i>keyboard_arrow_left</i>
 			</button>
 			<q-toolbar-title :padding="1">
-				History of Magnetism
+				Magnets: How Do They Work?
 			</q-toolbar-title>
 		</div>
 
 		<div class="layout-view">
 			<div class="layout-padding">
 				<div class="video-wrapper">
-					<p class="text-center"><strong>History of Magnetism</strong></p>
+					<p class="text-center"><strong>Magnets: How Do They Work?</strong></p>
 					<v-video :playing="isPlaying" 
 						src="/statics/videos/m1l1.mp4">
 					</v-video>

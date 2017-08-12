@@ -46,6 +46,21 @@
 				</component>
 			</keep-alive>
 	</q-modal>
+
+	<q-modal ref="quizzesModal" 
+			id="quizzesModal"
+			@open="loadQuizzes"
+			:content-css="{minWidth: '80vw'}">
+			<keep-alive>
+				<component :is="moduleQuizzes" @closed="moduleQuizzes = ''">
+				</component>
+			</keep-alive>
+	</q-modal>
+
+	<compentencies :competencies="module.competencies" 
+		:opened="compentenciesOpen"
+		@closed="compentenciesOpen = false">		
+	</compentencies>
 	
 	<button class="primary block mb-20"
 		@click="compentenciesOpen = true">
@@ -72,18 +87,17 @@
   	@click="openSummary">
   	Let's Summarize!
   </button>
-  <button class="primary block mt-20">Quizzes</button>
+
+  <button class="primary block mt-20"
+  	@click="openQuizzes">
+  	Quizzes
+  </button>
 
 	<button v-back-to-top.animate="{offset: 500, duration: 200}"
 	  class="warning circular fixed-bottom-right animate-pop"
 	  style="margin: 0 15px 15px 0">
 	  <i>keyboard_arrow_up</i>
 	</button>
-
-	<compentencies :competencies="module.competencies" 
-		:opened="compentenciesOpen"
-		@closed="compentenciesOpen = false">		
-	</compentencies>
 </div>
 </template>
 
@@ -91,8 +105,10 @@
 import Lesson from './Lesson'
 import Competencies from './Competencies'
 import mixinLessons from './mixins/Lessons'
+import Dialog from '../../assets/js/mixins/Dialog'
+import mixinLoading from './mixins/Loading'
 export default {
-	mixins: [mixinLessons],
+	mixins: [mixinLessons, Dialog, mixinLoading],
 	components: {
 		'lesson': Lesson,
 		'compentencies': Competencies
@@ -111,6 +127,7 @@ export default {
 			lessonAssignment: null,
 			lessonActivity: null,
 			moduleSummary: null,
+			moduleQuizzes: null,
 		}
 	},
 	methods: {
@@ -121,6 +138,9 @@ export default {
 		watchLesson (lesson) {
 			let file = this.getFile(lesson)
 			this.lessonVideo = `${file}-video`
+		},
+		loadQuizzes () {
+			// this.showLoading('Please wait...')
 		},
 		openActivity (lesson) {
 			let file = this.getFile(lesson)
@@ -133,9 +153,53 @@ export default {
 		openSummary () {
 			this.moduleSummary = `m${this.module.key}-summarize`
 		},
+		openQuizzes () {
+			let self = this;
+			let _dialog = {
+				title: '<p>Select Type</p>',
+				buttons: [
+					{
+						label: "Pre-Test",
+						handler: () => {
+							let type = `m${self.module.key}-pre`
+							self.quizPrompt(type)
+						}
+					},
+					{
+						label: "Post-Test",
+						handler: () => {
+							let type = `m${self.module.key}-post`
+							self.quizPrompt(type)
+						}
+					}
+				]
+			}
+			this.Dialog(_dialog)
+		},
+		quizPrompt (type) {
+			let self = this
+			let _dialog = {
+				title: "<p>You won't be able to go back once the Quiz has started, Do you want to Continue?</p>",
+				buttons: [
+					{
+						label: "Cancel",
+						handler: () => {
+							return;
+						}
+					},
+					{
+						label: "Continue",
+						handler: () => {
+							self.moduleQuizzes = type
+						}
+					}
+				]
+			}
+			this.Dialog(_dialog)
+		},
 		getFile (lesson) {
-				let module = this.module
-				return `m${module.key}l${lesson.index}`
+			let module = this.module
+			return `m${module.key}l${lesson.index}`
 		}
 	},	
 	watch: {
@@ -149,6 +213,18 @@ export default {
 			}
 			console.log(`${module} from summarize`)
 		},
+
+		moduleQuizzes (module) {
+			if (module) {
+				this.$refs.quizzesModal.open()
+			}
+			else {
+				this.$refs.quizzesModal.close()
+				this.$refs.quizzesModal.active = false
+			}
+			console.log(`${module} from quizzes`)
+		},
+		
 		lessonView (lesson) {
 			if (lesson)
 				this.$refs.lessonModal.open()			
@@ -246,6 +322,47 @@ export default {
 	}
 
 	.modal {
+		&#quizzesModal {
+			ol {
+				&.submitted {
+					li {
+						list-style: none;	
+						&::before { 
+							margin-left: -1.3em;
+							width: 1.3em;
+							display: inline-block;
+							font-weight: bold;
+					    font-family: "Material Icons";
+					    font-size: 1.3em;
+					    transition: all .3s linear;
+					    position: relative;
+					    top: .3em;
+						}
+						&.correct::before {
+							color: green;
+							content: '\e876';
+						}
+						&.wrong::before {
+							color: red;
+							content: '\e5cd';
+						}
+					}
+				}
+				li {
+					margin-bottom: 10px;
+					.quizzes-card {
+						margin-top: 5px;
+						label {
+							display: block;
+							width: 100%;
+							&:not(:last-child) {
+								margin-bottom: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
 		.layout-view > .layout-padding {
 			background: white;
 			min-height: 100%;

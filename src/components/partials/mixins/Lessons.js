@@ -21,6 +21,8 @@ export default {
 		'm1l3-assignment': () => import('../../pages/assignments/Module1/Lesson3'),
 		'm1l4-assignment': () => import('../../pages/assignments/Module1/Lesson4'),
 		'm1l5-assignment': () => import('../../pages/assignments/Module1/Lesson5'),
+		'm1-pre': () => import('../../pages/quizzes/Module1/Pre'),
+		'm1-post': () => import('../../pages/quizzes/Module1/Post'),
 
 		'm2-summarize': () => import('../../pages/summarizations/Module2'),
 		'm2l1-lesson': () => import('../../pages/lessons/Module2/Lesson1'),
@@ -55,6 +57,8 @@ export default {
 		'm2l6-assignment': () => import('../../pages/assignments/Module2/Lesson6'),
 		'm2l7-assignment': () => import('../../pages/assignments/Module2/Lesson7'),
 		'm2l8-assignment': () => import('../../pages/assignments/Module2/Lesson8'),
+		'm2-pre': () => import('../../pages/quizzes/Module2/Pre'),
+		'm2-post': () => import('../../pages/quizzes/Module2/Post'),
 
 		'm3-summarize': () => import('../../pages/summarizations/Module3'),
 		'm3l1-lesson': () => import('../../pages/lessons/Module3/Lesson1'),
@@ -85,5 +89,7 @@ export default {
 		'm3l5-assignment': () => import('../../pages/assignments/Module3/Lesson5'),
 		'm3l6-assignment': () => import('../../pages/assignments/Module3/Lesson6'),
 		'm3l7-assignment': () => import('../../pages/assignments/Module3/Lesson7'),
+		'm3-pre': () => import('../../pages/quizzes/Module3/Pre'),
+		'm3-post': () => import('../../pages/quizzes/Module3/Post'),
 	}
 }
