@@ -8,7 +8,7 @@
     </q-gallery-slider>
     <router-link
       to="/modules">
-      <button class="primary start-button" >Start</button>
+      <button class="primary start-button">Start</button>
     </router-link>
   </div>
 </template>
@@ -27,11 +27,7 @@ export default {
 }
 </script>
 
-<style>
-.layout-view {
-  background: #F2C037;
-  color: #444;
-}
+<style lang="scss">
 .start-button {
   margin-top: 20px;
 }

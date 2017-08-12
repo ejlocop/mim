@@ -21,7 +21,6 @@
 	  	<a href="#" @click.prevent.stop="openDialog(header)">Quizzes</a>
 	  </div>
 
-	  <!-- Modals -->
 		<q-modal ref="modalCompetencies" :content-css="{padding: '10px'}">
 		  <h5>Learning Competencies</h5>
 		  <p>After going through this module, you are expected to:</p>

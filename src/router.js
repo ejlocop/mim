@@ -1,10 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import modules from './assets/modules.json'
 
 Vue.use(VueRouter)
 
 function load (component) {
   return () => System.import(`components/${component}.vue`)
+}
+
+function filterModule (route) {
+  const module = modules.filter((module) => {
+    return module.key == route.params.id
+  })[0]
+  
+  return {
+    module
+  }
 }
 
 export default new VueRouter({
@@ -21,9 +32,26 @@ export default new VueRouter({
    */
 
   routes: [
-    { path: '/modules-1', component: load('pages/Module1') },
-    { path: '/modules-2', component: load('pages/Module2') },
-    { path: '/modules-2', component: load('pages/Module3') },
+    { 
+      path: `/modules/:id([1-${modules.length}]+)`, 
+      component: load('partials/ModuleNew'),
+      props: filterModule,
+      // children: [
+      //   {
+      //     path: '',
+      //     component: load('partials/ModuleNew'),
+      //     props: filterModule
+      //   },
+      //   {
+      //     path: `lessons/:lessonId(\\d+)`,
+      //     component: load('partials/LessonPage'),
+      //     props: filterModule
+      //   }
+      // ],
+    },
+    { path: '/modules/:', component: load('Modules') },
+    // { path: '/modules/2', component: load('pages/Module2') },
+    // { path: '/modules/2', component: load('pages/Module3') },
     { path: '/modules', component: load('Modules') },
     { path: '/', component: load('Index') },
     { path: '*', component: load('Error404') }
