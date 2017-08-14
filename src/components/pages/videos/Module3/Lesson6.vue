@@ -14,7 +14,7 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Types of Lenses</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m3l6.mp4">
+						:src="'./statics/videos/m3l6.mp4'">
 					</v-video>
 				</div>
 			</div>

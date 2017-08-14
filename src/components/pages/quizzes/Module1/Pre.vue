@@ -416,46 +416,46 @@
 					II. Complete each statement by supplying the correct term or phrase.
 				</strong>
 				<ol :class="submitted ? 'submitted' : ''">
-					<li :class="status_1.item16">
+					<li :class="status_2.item1">
 						The N pole of a magnet will be attracted to the 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item1"> 
 						pole of another magnet.
 					</li>
-					<li :class="status_1.item17">
+					<li :class="status_2.item2">
 						Alloys and ceramics are used to make 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item2"> 
 						magnets.
 					</li>
-					<li :class="status_1.item18">
+					<li :class="status_2.item3">
 						The S pole of the earth’s magnetic field is located in 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item3">
 					</li>
-					<li :class="status_1.item19">
+					<li :class="status_2.item4">
 						Many magnetic lines of force go into a magnet at its 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item4">
 					</li>
-					<li :class="status_1.item20">
+					<li :class="status_2.item5">
 						A suspended solenoid will rotate until it is lined up with the earth’s 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item5">
 					</li>
-					<li :class="status_1.item21">
+					<li :class="status_2.item6">
 						Regions containing groups of atoms that act like small magnets are called 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item6">
 					</li>
-					<li :class="status_1.item22">
+					<li :class="status_2.item7">
 						The relationship and interaction between electricity and magnetism is called 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item7">
 					</li>
-					<li :class="status_1.item23">
+					<li :class="status_2.item8">
 						Like poles of magnets 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item8">
 						each other
 					</li>
-					<li :class="status_1.item24">
+					<li :class="status_2.item9">
 						<input :disabled="submitted"  type="text" v-model="choices_2.item9">
 						are objects that attract material containing iron and they always face the same direction when moving freely.
 					</li>
-					<li :class="status_1.item25">
+					<li :class="status_2.item10">
 						Natural magnets are made of iron ore called 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item10">
 					</li>

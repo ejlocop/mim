@@ -536,7 +536,7 @@
 				</strong>
 
 				<ol :class="submitted ? 'submitted' : ''">
-					<li :class="status_1.item16">
+					<li :class="status_2.item1">
 						The combined effects of electricity and magnetism 
 						<q-select placeholder="Select Answer" 
 							class="full-width"
@@ -547,7 +547,7 @@
 							value="choices_2.item1">							
 						</q-select>
 					</li>
-					<li :class="status_1.item17">
+					<li :class="status_2.item2">
 						A magnet in which magnetism is produced by an electric current
 
 						<q-select placeholder="Select Answer" 
@@ -559,7 +559,7 @@
 							value="choices_2.item2">							
 						</q-select>
 					</li>
-					<li :class="status_1.item18">
+					<li :class="status_2.item3">
 						The creation of a current by a changing magnetic field
 
 						<q-select placeholder="Select Answer" 
@@ -571,7 +571,7 @@
 							value="choices_2.item3">							
 						</q-select>
 					</li>
-					<li :class="status_1.item19">
+					<li :class="status_2.item4">
 						A machine that changes kinetic energy into electric energy 
 
 						<q-select placeholder="Select Answer" 
@@ -583,7 +583,7 @@
 							value="choices_2.item4">							
 						</q-select>
 					</li>
-					<li :class="status_1.item20">
+					<li :class="status_2.item5">
 						A machine that changes electric energy into kinetic energy
 
 						<q-select placeholder="Select Answer" 
@@ -595,7 +595,7 @@
 							value="choices_2.item5">							
 						</q-select>
 					</li>
-					<li :class="status_1.item21">
+					<li :class="status_2.item6">
 						A device that increases or decreases voltage
 
 						<q-select placeholder="Select Answer" 
@@ -607,7 +607,7 @@
 							value="choices_2.item6">							
 						</q-select>
 					</li>
-					<li :class="status_1.item22">
+					<li :class="status_2.item7">
 						Tiny permanent magnets
 
 						<q-select placeholder="Select Answer" 
@@ -619,7 +619,7 @@
 							value="choices_2.item7">							
 						</q-select>
 					</li>
-					<li :class="status_1.item23">
+					<li :class="status_2.item8">
 						Magnets made from alloys of aluminum, cobalt and nickel 	
 
 						<q-select placeholder="Select Answer" 
@@ -631,7 +631,7 @@
 							value="choices_2.item8">
 						</q-select>
 					</li>
-					<li :class="status_1.item24">
+					<li :class="status_2.item9">
 						Region in the space around a magnet in which a magnetic force acts on other magnet brought into the region 
 
 						<q-select placeholder="Select Answer" 
@@ -643,7 +643,7 @@
 							value="choices_2.item9">							
 						</q-select>
 					</li>
-					<li :class="status_1.item25">
+					<li :class="status_2.item10">
 						magnet made mostly of iron, with little neodynmium and boron 
 
 						<q-select placeholder="Select Answer" 

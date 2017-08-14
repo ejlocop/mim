@@ -26,7 +26,7 @@
 					<li>
 						Let the mirror stand vertically along the edge of the paper protractor as shown in Figure. Use the clay to support the plane mirror.
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l2.jpg" alt="">
+							<img :src="'.statics/images/m3l2.jpg'" alt="">
 						</div>
 					</li>
 					<li>
@@ -38,7 +38,7 @@
 					<li>
 						Repeat steps 2 to 4 for angles 200, 300, 400, and 500. Enter all your measurements in Table.
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l2-2.jpg" alt="">
+							<img :src="'.statics/images/m3l2-2.jpg'" alt="">
 						</div>
 					</li>
 				</ol>

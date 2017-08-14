@@ -14,7 +14,7 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Magnets: How Do They Work?</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m1l1.mp4">
+						:src="'./statics/videos/m1l1.mp4'">
 					</v-video>
 				</div>
 			</div>

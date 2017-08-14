@@ -21,11 +21,11 @@
 					<div class="card-content">
 						<strong>Step-up Transformer</strong>
 					</div>
-					<img src="/statics/images/m1l5-7.jpg" alt="">
+					<img :src="'./statics/images/m1l5-7.jpg'" alt="">
 					<div class="card-content">
 						<strong>Step-down Transformer</strong>
 					</div>
-					<img src="/statics/images/m1l5-8.jpg" alt="">
+					<img :src="'./statics/images/m1l5-8.jpg'" alt="">
 				</div>
 
 				<strong>

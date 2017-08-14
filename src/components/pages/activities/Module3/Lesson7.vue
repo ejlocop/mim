@@ -23,26 +23,26 @@
 						Copy each of the diagrams (A–H) below on a clear sheet of paper. Construct ray diagram using, as much as possible, the ‘three most useful rays’ for each of the following cases to determine the location, orientation, size, and type of the image.
 
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l7-5.jpg" alt="">
+							<img :src="'./statics/images/m3l7-5.jpg'" alt="">
 						</div>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l7-6.jpg" alt="">
+							<img :src="'./statics/images/m3l7-6.jpg'" alt="">
 						</div>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l7-7.jpg" alt="">
+							<img :src="'./statics/images/m3l7-7.jpg'" alt="">
 						</div>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l7-8.jpg" alt="">
+							<img :src="'./statics/images/m3l7-8.jpg'" alt="">
 						</div>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l7-9.jpg" alt="">
+							<img :src="'./statics/images/m3l7-9.jpg'" alt="">
 						</div>
 					</li>
 					<li>
 						Use a table similar the table below to summarize the characteristics and location of the images formed.
 
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l7-10.jpg" alt="">
+							<img :src="'./statics/images/m3l7-10.jpg'" alt="">
 						</div>
 					</li>
 				</ol>

@@ -26,8 +26,8 @@
 					</li>
 				</ul>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l5.jpg" alt="">
-					<img src="/statics/images/m3l5-2.jpg" alt="">
+					<img :src="'./statics/images/m3l5.jpg'" alt="">
+					<img :src="'./statics/images/m3l5-2.jpg'" alt="">
 				</div>
 
 				<strong>The ‘Four Principal Rays’ in Curved Mirrors</strong>
@@ -35,10 +35,10 @@
 					Images formed in a curved mirror can be located and described throughnray diagramming. The P– F ray, F – P ray, C – C ray, and the V ray are the ‘Four Principal Rays’ in curve mirrors. These rays, applied for concave and convex mirrors, are presented in the table below.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l5-3.jpg" alt="">
+					<img :src="'./statics/images/m3l5-3.jpg'" alt="">
 				</div>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l5-4.jpg" alt="">
+					<img :src="'./statics/images/m3l5-4.jpg'" alt="">
 				</div>
 
 				<p>

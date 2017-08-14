@@ -20,7 +20,7 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Ray Diagram Part 2</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m3l5-2.mp4">
+						:src="'./statics/videos/m3l5-2.mp4'">
 					</v-video>
 				</div>
 			</div>

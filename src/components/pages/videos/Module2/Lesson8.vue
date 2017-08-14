@@ -14,19 +14,19 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Part 1</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m2l8.mp4">
+						:src="'./statics/videos/m2l8.mp4'">
 					</v-video>
 				</div>
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Part 2</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m2l8-2.mp4">
+						:src="'./statics/videos/m2l8-2.mp4'">
 					</v-video>
 				</div>
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Part 3</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m2l8-3.mp4">
+						:src="'./statics/videos/m2l8-3.mp4'">
 					</v-video>
 				</div>
 			</div>

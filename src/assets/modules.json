@@ -2,7 +2,7 @@
 	{
 		"key": 1,
 		"title": "ELECTRICITY and MAGNETISM",
-		"header_image": "/statics/module-1.png",
+		"header_image": "./statics/module-1.png",
 		"header_color": "",
 		"lessons": [
 			{
@@ -59,7 +59,7 @@
 	{
 		"key": 2,
 		"title": "ELECTROMAGNETIC SPECTRUM",
-		"header_image": "/statics/module-2.png",
+		"header_image": "./statics/module-2.png",
 		"header_color": "",
 		"lessons": [
 			{
@@ -130,7 +130,7 @@
 	{
 		"key": 3,
 		"title": "LIGHT: MIRRORS and LENSES",
-		"header_image": "/statics/module-3.png",
+		"header_image": "./statics/module-3.png",
 		"header_color": "",
 		"lessons": [
 			{
