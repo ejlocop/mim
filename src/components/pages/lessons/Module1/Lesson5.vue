@@ -23,8 +23,8 @@
 				</p>
 
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l5.jpg" alt="">
-					<img src="/statics/images/m1l5-2.jpg" alt="">
+					<img :src="'./statics/images/m1l5.jpg'" alt="">
+					<img :src="'./statics/images/m1l5-2.jpg'" alt="">
 					<div class="card-content">
 						A moving loop cuts through a magnetic field, which generates current in the wire.
 					</div>
@@ -52,9 +52,9 @@
 					One of the most important uses of electromagnetism is in the electric motor. An <strong>electric motor</strong> is a <strong>device that converts electrical energy to mechanical energy</strong>. A motor contains a movable electromagnet. If an alternating current is supplied to the electromagnet, its poles are reversed. Where it was once attracted by the opposite pole of fixed magnet, it will next be repelled. This process is repeated many times each second.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l5-3.jpg" alt="">
-					<img src="/statics/images/m1l5-3.jpg" alt="">
-					<img src="/statics/images/m1l5-3.jpg" alt="">
+					<img :src="'./statics/images/m1l5-3.jpg'" alt="">
+					<img :src="'./statics/images/m1l5-3.jpg'" alt="">
+					<img :src="'./statics/images/m1l5-3.jpg'" alt="">
 					<div class="card-content">
 						There are many types of electric motors. Each is designed for a particular purpose or use. They all operate on the principle of electromagnetism.
 					</div>
@@ -76,7 +76,7 @@
 							Schematic Diagram of the Parts of a Transformer
 						</strong>
 					</div>
-					<img src="/statics/images/m1l5-6.jpg" alt="">
+					<img :src="'./statics/images/m1l5-6.jpg'" alt="">
 				</div>
 			</div>
 		</div>

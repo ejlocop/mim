@@ -15,7 +15,7 @@
 					Accelerating electrons produce electromagnetic waves. These waves are a combination of electric and magnetic fields. A changing magnetic field produces an electric field and a changing electric field produces a magnetic field. As accelerated electrons produce an electric field of a wave, the varying electric field produces the wave’s magnetic field. Both the electric field and the magnetic field oscillate perpendicular to each other and to the direction of the propagating wave.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m2l2.jpg" alt="">
+					<img :src="'./statics/images/m2l2.jpg'" alt="">
 				</div>
 				<p>
 					All electromagnetic waves can travel through a medium but unlike other types of waves, they can also travel in vacuum. They travel in vacuum at a speed of 3X108 m/s and denoted as c, the speed of light. The wave speed, frequency, and wavelength are related by the following equation:

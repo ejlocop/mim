@@ -23,8 +23,8 @@
 					</li>
 				</ul>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l7.jpg" alt="">
-					<img src="/statics/images/m3l7.jpg" alt="">
+					<img :src="'./statics/images/m3l7.jpg'" alt="">
+					<img :src="'./statics/images/m3l7.jpg'" alt="">
 				</div>
 
 				<strong>The ‘Three Most Useful Rays’ in Lenses</strong>
@@ -32,10 +32,10 @@
 					Images formed in a lens can be located and described through ray diagramming. The following three most useful rays for convex and concave lenses are presented below.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l7-3.jpg" alt="">
+					<img :src="'./statics/images/m3l7-3.jpg'" alt="">
 				</div>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l7-4.jpg" alt="">
+					<img :src="'./statics/images/m3l7-4.jpg'" alt="">
 				</div>
 
 				<p>

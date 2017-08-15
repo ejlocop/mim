@@ -24,18 +24,18 @@
 							Using the protractor and the ruler, copy each of the diagrams (A – G) below on a separate sheet of paper. As much as possible, use the four principal rays to locate the image formed in a curved mirror.
 						</p>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l5-5.jpg" alt="">
-							<img src="/statics/images/m3l5-6.jpg" alt="">
-							<img src="/statics/images/m3l5-7.jpg" alt="">
-							<img src="/statics/images/m3l5-8.jpg" alt="">
-							<img src="/statics/images/m3l5-9.jpg" alt="">
+							<img :src="'./statics/images/m3l5-5.jpg'" alt="">
+							<img :src="'./statics/images/m3l5-6.jpg'" alt="">
+							<img :src="'./statics/images/m3l5-7.jpg'" alt="">
+							<img :src="'./statics/images/m3l5-8.jpg'" alt="">
+							<img :src="'./statics/images/m3l5-9.jpg'" alt="">
 							<div class="card-content">
 								Concave Mirror
 							</div>
 						</div>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l5-10.jpg" alt="">
-							<img src="/statics/images/m3l5-11.jpg" alt="">
+							<img :src="'./statics/images/m3l5-10.jpg'" alt="">
+							<img :src="'./statics/images/m3l5-11.jpg'" alt="">
 							<div class="card-content">
 								Convex Mirror
 							</div>
@@ -46,7 +46,7 @@
 							Use a table similar to the table below to summarize the characteristics and location of the images formed.
 						</p>
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l5-12.jpg" alt="">
+							<img :src="'./statics/images/m3l5-12.jpg'" alt="">
 						</div>
 					</li>
 				</ol>

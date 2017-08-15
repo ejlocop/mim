@@ -46,7 +46,7 @@
 					The diagram below illustrates a bar magnet that is suspended by a string. Another bar magnet is brought near it. Study the arrows in the diagram and answer the questions below.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-7.jpg" alt="">
+					<img :src="'./statics/images/m1l3-7.jpg'" alt="">
 				</div>
 				<strong>Answer the following questions:</strong>
 				<ul>

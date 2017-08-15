@@ -15,7 +15,7 @@
 					When white light passes through a prism, it is separated into its constituent colors: the red, orange, yellow, green, blue, indigo and violet. These colors do not distinctly separate but they continuously change from red to violet. Red color has the longest wavelength from among these colors and violet has the shortest.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m2l7.jpg" alt="">
+					<img :src="'./statics/images/m2l7.jpg'" alt="">
 				</div>
 				<p>
 					Our eyes are sensitive to electromagnetic waves of wavelengths that ranges from 4x10-7 m to 7x10-7 m. This is the range of wavelengths of white light. Thus, the spectrum of white light is therefore called the visible spectrum. Table shows the wavelengths of the different colors that constitute the white light.

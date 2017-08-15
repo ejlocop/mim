@@ -27,7 +27,7 @@
 					<div class="card-content">
 						Figure below will give you a clearer idea of the characteristics of the electromagnetic waves as their sizes are compared with visible materials.
 					</div>
-					<img src="/statics/images/m2l3.jpg" alt="">
+					<img :src="'./statics/images/m2l3.jpg'" alt="">
 				</div>
 				<p>
 					Table below shows the relative wavelength, frequency, and energy of each of the different types of electromagnetic waves.
@@ -36,7 +36,7 @@
 					<div class="card-content">
 						Table 1: The electromagnetic waves' wavelengths, frequencies, and energies
 					</div>
-					<img src="/statics/images/m2l3-2.jpg" alt="">
+					<img :src="'./statics/images/m2l3-2.jpg'" alt="">
 					<!-- <table border="1" cellpadding="5" cellspacing="0" class="text-center">
 						<thead>
 							<tr>

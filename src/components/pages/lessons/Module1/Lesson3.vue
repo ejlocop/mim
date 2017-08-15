@@ -27,7 +27,7 @@
 				
 				<strong>3.b Magnets and Magnetic Forces</strong>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3.jpg">
+					<img :src="'./statics/images/m1l3.jpg'">
 				</div>
 				<p>
 					Look at the pictures above. The areas of greatest magnetic force are called magnetic poles.
@@ -43,7 +43,7 @@
 					The diagrams below illustrate the rules of magnets. Refer to the diagrams below:
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-2.jpg">
+					<img :src="'./statics/images/m1l3-2.jpg'">
 				</div>
 
 				<strong>
@@ -53,7 +53,7 @@
 					Most materials cannot be magnetized. Iron and a few other materials such as steel, nickel and cobalt can be magnetized. These materials have regions called <strong>magnetic domains</strong>. Magnetic domains, which are clusters of many atoms, can be thought of as tiny magnets.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-3.jpg">
+					<img :src="'./statics/images/m1l3-3.jpg'">
 				</div>
 				<blockquote>
 					Substances that can be magnetized can be thought of as consisting of many tiny magnets. How does the arrangement of the “tiny magnets” differ between the unmagnetized and magnetized substances?
@@ -62,14 +62,14 @@
 				<strong>LOOK AT THIS!</strong>
 
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-4.jpg">
+					<img :src="'./statics/images/m1l3-4.jpg'">
 				</div>
 				<blockquote>
 					<strong>BEFORE:</strong> When the material is unmagnetized, the domains are not lined up in a definite way. They are randomly arranged.ets” differ between the unmagnetized and magnetized substances?
 				</blockquote>
 
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-5.jpg">
+					<img :src="'./statics/images/m1l3-5.jpg'">
 				</div>
 				<blockquote>
 					<strong>AFTER:</strong> When the material is magnetized, the domains line up in a definite pattern. All the north poles point in one direction, and the south poles in the other.
@@ -84,7 +84,7 @@
 				</p>
 
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-6.jpg">
+					<img :src="'./statics/images/m1l3-6.jpg'">
 				</div>
 				
 			</div>

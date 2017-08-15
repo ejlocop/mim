@@ -47,7 +47,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item2">
 						If the poles of two magnets repel each other
 						<div class="quizzes-card">
 							<label>
@@ -73,7 +73,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item3">
 						Magnetizing a piece of iron is a process by which
 						<div class="quizzes-card">
 							<label>
@@ -99,7 +99,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item4">
 						A magnetic field can make a compass needle turn because the field
 						<div class="quizzes-card">
 							<label>
@@ -125,7 +125,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item5">
 						A primary solenoid connected to a battery is inside a secondary solenoid. It is not possible to induce a current into the secondary coil by
 						<div class="quizzes-card">
 							<label>
@@ -151,7 +151,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item6">
 						A magnet will attract a wire if
 						<div class="quizzes-card">
 							<label>
@@ -177,7 +177,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item7">
 						The iron atom acts as a magnet because
 						<div class="quizzes-card">
 							<label>
@@ -203,7 +203,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item8">
 						A steel sewing needle can be made into a magnet by
 						<div class="quizzes-card">
 							<label>
@@ -229,7 +229,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item9">
 						stroking it with a magnet in one direction only
 						<div class="quizzes-card">
 							<label>
@@ -255,7 +255,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item10">
 						To increase the strength of an electromagnet,	
 						<div class="quizzes-card">
 							<label>
@@ -281,7 +281,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item11">
 						If a magnet is brought near a magnet suspended on a string, the
 						<div class="quizzes-card">
 							<label>
@@ -307,7 +307,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item12">
 						A device that turns electric energy into sound energy is
 						<div class="quizzes-card">
 							<label>
@@ -333,7 +333,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item13">
 						Substances that are slightly attracted by strong magnets are said to be
 						<div class="quizzes-card">
 							<label>
@@ -359,7 +359,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item14">
 						The lines of force of unlike poles placed near each other
 						<div class="quizzes-card">
 							<label>
@@ -385,7 +385,7 @@
 						</div>
 					</li>
 
-					<li :class="status_1.item1">
+					<li :class="status_1.item15">
 						The scientist who discovered that an electric current can affect the action of a magnetic needle was
 						<div class="quizzes-card">
 							<label>
@@ -416,46 +416,46 @@
 					II. Complete each statement by supplying the correct term or phrase.
 				</strong>
 				<ol :class="submitted ? 'submitted' : ''">
-					<li :class="status_1.item1">
+					<li :class="status_2.item1">
 						The N pole of a magnet will be attracted to the 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item1"> 
 						pole of another magnet.
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item2">
 						Alloys and ceramics are used to make 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item2"> 
 						magnets.
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item3">
 						The S pole of the earth’s magnetic field is located in 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item3">
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item4">
 						Many magnetic lines of force go into a magnet at its 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item4">
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item5">
 						A suspended solenoid will rotate until it is lined up with the earth’s 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item5">
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item6">
 						Regions containing groups of atoms that act like small magnets are called 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item6">
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item7">
 						The relationship and interaction between electricity and magnetism is called 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item7">
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item8">
 						Like poles of magnets 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item8">
 						each other
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item9">
 						<input :disabled="submitted"  type="text" v-model="choices_2.item9">
 						are objects that attract material containing iron and they always face the same direction when moving freely.
 					</li>
-					<li :class="status_1.item1">
+					<li :class="status_2.item10">
 						Natural magnets are made of iron ore called 
 						<input :disabled="submitted"  type="text" v-model="choices_2.item10">
 					</li>

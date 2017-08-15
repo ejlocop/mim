@@ -42,7 +42,7 @@
 					</li>
 				</ol>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l4-4.jpg" alt="">
+					<img :src="'./statics/images/m1l4-4.jpg'" alt="">
 				</div>
 
 				<strong>4.b Diagram Analysis</strong>
@@ -50,7 +50,7 @@
 					The set up shows a wire that is bent and the ends were attached to a galvanometer.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l4-5.jpg" alt="">
+					<img :src="'./statics/images/m1l4-5.jpg'" alt="">
 				</div>
 
 				<strong>Guide Questions:</strong>

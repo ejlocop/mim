@@ -27,7 +27,7 @@
 					X-rays come just after the ultraviolet rays. They are of shorter wavelength but carries higher energy than the UV.
 				</blockquote>
 				<div class="card lesson-card">
-					<img src="/statics/images/m2l8.jpg" alt="">
+					<img :src="'./statics/images/m2l8.jpg'" alt="">
 				</div>
 				<p>
 					X-rays are produced using an X-ray tube. They are emitted when fast moving electrons hit a metal target. X-rays were discovered by Wilhelm Conrad Roentgen in 1895.
