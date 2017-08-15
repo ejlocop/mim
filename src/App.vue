@@ -33,7 +33,7 @@ export default {
 
 <style>
 .layout-view {
-  background: #F2C037;
+  background: #FFF59D;
   color: #444;
 }
 </style>
