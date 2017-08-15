@@ -14,7 +14,7 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>The Electromagnetic Spectrum</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m2l3.mp4">
+						:src="'./statics/videos/m2l3.mp4'">
 					</v-video>
 				</div>
 			</div>

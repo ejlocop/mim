@@ -48,7 +48,7 @@
 					</li>
 				</ol>
 				<div class="card lesson-card">
-					<img src="/statics/images/m2l6-2.jpg" alt="">
+					<img :src="'.statics/images/m2l6-2.jpg'" alt="">
 				</div>
 
 				<strong>Guide Questions:</strong>

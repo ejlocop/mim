@@ -7,6 +7,12 @@
 			<q-toolbar-title :padding="1">
 				How It Came About
 			</q-toolbar-title>
+
+			<button :disabled="!canSubmit" 
+				class="white right text-primary"
+				@click="submit">
+				{{ submitText }}
+			</button>
 		</div>
 		
 		<div class="layout-view">
@@ -22,48 +28,50 @@
 				<p>
 					I. Match the scientists given below with their contributions.
 				</p>
-				<table>
-					<tr>
-						<td><strong>Scientist</strong></td>
-						<td><strong>Contributions</strong></td>
-					</tr>
-					<tr>
-						<td>______1. Ampere </td>
-						<td>
-							<strong>A.</strong> Contributed in developing equations that showed the relationship of electricity and magnetism
-						</td>
-					</tr>
-					<tr>
-						<td>
-							______2. Faraday 
-						</td>
-						<td>
-							<strong>B.</strong> Showed experimental evidence of electromagnetic waves and their link to light
-						</td>
-					</tr>
-					<tr>
-						<td>______3. Hertz</td>
-						<td>
-							<strong>C.</strong> Demonstrated the magnetic effect based on the direction of current
-						</td>
-					</tr>
-					<tr>
-						<td>
-							______4. Maxwell 
-						</td>
-						<td>
-							<strong>D.</strong> Formulated the principle behind electromagnetic induction.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							______5. Oersted
-						</td>
-						<td>
-							<strong>E.</strong> Showed how a current carrying wire behaves like a magnet
-						</td>
-					</tr>
-				</table>
+				<ol type="a" :class="submitted ? 'submitted' : ''">
+					<li :class="status_1.item1">
+						Contributed in developing equations that showed the relationship of electricity and magnetism
+						<q-select :disable="submitted"
+						  type="radio"
+						  v-model="choices_1.item1"
+						  :options="test2Choices"
+						></q-select>
+					</li>
+					<li :class="status_1.item2">
+						Showed experimental evidence of electromagnetic waves and their link to light
+						<q-select :disable="submitted"
+						  type="radio"
+						  v-model="choices_1.item2"
+						  :options="test2Choices"
+						></q-select>
+					</li>
+					<li :class="status_1.item3">
+						Demonstrated the magnetic effect based on the direction of current
+						<q-select :disable="submitted"
+						  type="radio"
+						  v-model="choices_1.item3"
+						  :options="test2Choices"
+						></q-select>
+					</li>
+					<li :class="status_1.item4">
+						Formulated the principle behind electromagnetic induction.
+						<q-select :disable="submitted"
+						  type="radio"
+						  v-model="choices_1.item4"
+						  :options="test2Choices"
+						></q-select>
+					</li>
+					<li :class="status_1.item5">
+						Showed how a current carrying wire behaves like a magnet
+						<q-select :disable="submitted"
+						  type="radio"
+						  v-model="choices_1.item5"
+						  :options="test2Choices"
+						></q-select>
+					</li>
+
+				</ol>
+
 				<p>
 					II. Using the information you gathered previously, make a concept web/comic strips of the contributions of the following scientists.
 				</p>
@@ -82,9 +90,77 @@
 	</q-layout>
 </template>
 <script>
-import page from '../../../../assets/js/mixins/Page.js'
+import QuizMixin from '../../quizzes/mixin'
+
 export default {
-	mixins: [page]
+	mixins: [QuizMixin],
+	data () {
+		return {
+			storageKey: 'm2l1-activity',
+			test2Choices: [
+				{
+					value: 'a',
+					label: 'Ampere ',
+				},
+				{
+					value: 'b',
+					label: 'Faraday ',
+				},
+				{
+					value: 'c',
+					label: 'Hertz ',
+				},
+				{
+					value: 'd',
+					label: 'Maxwell ',
+				},
+				{
+					value: 'e',
+					label: 'Oersted',
+				}
+			],
+			choices_1: {
+				item1: '',
+				item2: '',
+				item3: '',
+				item4: '',
+				item5: '',
+			},
+			answers_1: {
+				item1: ['c'],
+				item2: ['d'],
+				item3: ['b'],
+				item4: ['a'],
+				item5: ['a'],
+			}
+		}
+	},
+
+	computed: {
+		status_1 () {
+			return {
+				item1: this.compute(this.answers_1.item1, this.choices_1.item1),
+				item2: this.compute(this.answers_1.item2, this.choices_1.item2),
+				item3: this.compute(this.answers_1.item3, this.choices_1.item3),
+				item4: this.compute(this.answers_1.item4, this.choices_1.item4),
+				item5: this.compute(this.answers_1.item5, this.choices_1.item5)
+			}
+		},
+		totalScore () {
+			let status1 = Object.keys(this.status_1)
+			let correct1 = status1.filter((item) => {
+				return this.status_1[item] == 'correct'
+			})
+
+			return correct1.length
+		},
+
+		totalItems () {
+			let answers1 = Object.keys(this.answers_1)
+			return answers1.length
+		},
+	}
+
 }
 </script>
 <style lang="scss"></style>

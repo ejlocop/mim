@@ -15,10 +15,10 @@
 					Reflection is the bouncing off of light rays when it hits a surface like a plane mirror. In the activity, you used plane mirrors and located the object distance, <strong class="text-italic">p</strong> and the image distance, <strong class="text-italic">q</strong> and found out that p is equal to q. In plane mirrors, the image appears as if it is behind the mirror but actually not, so the image is virtual. The value therefore of image distance, q is negative. The height of the image, <strong class="text-italic">h’</strong> in plane mirrors is always the same as the height of the object, thus its magnification, <strong class="text-italic">M</strong> is 1. The magnification formula is written below:
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l1.jpg" alt="">
+					<img :src="'./statics/images/m3l1.jpg'" alt="">
 				</div>
 				<div class="card lesson-card">
-					<img src="/statics/images/m3l1-2.jpg" alt="">
+					<img :src="'./statics/images/m3l1-2.jpg'" alt="">
 				</div>
 				
 				<strong>Incident Ray</strong>

@@ -19,7 +19,7 @@
 				</p>
 
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l4.jpg" alt="">
+					<img :src="'./statics/images'/m1l4.jpg" alt="">
 					<div class="card-content">
 						Hans Christian Oersted
 					</div>
@@ -37,8 +37,8 @@
 					Shortly after Oersted’s discovery that electricity produces magnetic field, scientists experimented with the opposite possibility. In 1831, Michael Faraday, an English scientist, discovered that a moving wire through a magnetic field could cause an electric current. At about the same time, an American scientist named Joseph Henry made a similar discovery. A current produced by a magnetic field is an induced current.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l4-2.jpg" height="150" alt="">
-					<img src="/statics/images/m1l4-3.jpg" height="150" alt="">
+					<img :src="'./statics/images/m1l4-2.jpg'" height="150" alt="">
+					<img :src="'./statics/images/m1l4-3.jpg'" height="150" alt="">
 				</div>
 			</div>
 		</div>

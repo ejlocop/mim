@@ -18,13 +18,13 @@
 					Types of Reflection:
 				</strong>
 				<div class="card lesson-card">
-					<img src="/statics/images/m4l4.jpg" alt="">
+					<img :src="'./statics/images/m4l4.jpg'" alt="">
 					<div class="card-content">
 						Specular/ Regular Reflection. This is a reflection of light on smooth surfaces such as mirrors or a calm body of water. An example of this is the image of the Mayon volcano on a calm water shown in figure below.
 					</div>
 				</div>
 				<div class="card lesson-card">
-					<img src="/statics/images/m4l4.jpg" alt="">
+					<img :src="'./statics/images/m4l4.jpg'" alt="">
 					<div class="card-content">
 						Diffused/Irregular Reflection. This is a reflection of light on rough surfaces such as clothing, paper, wavy water, and the asphalt roadway. An example of this is the image of a mountain on a wavy body of water as shown in figure below.
 					</div>
@@ -39,7 +39,7 @@
 					<li>
 
 						<div class="card lesson-card">
-							<img src="/statics/images/m4l4-3.jpg" alt="">
+							<img :src="'./statics/images/m4l4-3.jpg'" alt="">
 							<div class="card-content">
 								<strong>The Concave Mirror</strong>
 								<ul>
@@ -55,7 +55,7 @@
 					</li>
 					<li>
 						<div class="card lesson-card">
-							<img src="/statics/images/m4l4-4.jpg" alt="">
+							<img :src="'./statics/images/m4l4-4.jpg'" alt="">
 							<div class="card-content">
 								<strong>The Convex Mirror</strong>
 								<ul>

@@ -25,7 +25,7 @@
 					<li>
 						Let the mirror stand vertically along a line on a graphing paper as shown in Figure. Use the modeling clay to support the plane mirror.
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l1-3.jpg" alt="">
+							<img :src="'.statics/images/m3l1-3.jpg'" alt="">
 						</div>
 					</li>
 					<li>
@@ -37,7 +37,7 @@
 					<li>
 						Look at the images of the marks formed by the mirror. Measure the distance of each image from the mirror by counting the number of parallel lines between the image and the base of the mirror. Record this also in Table 1.
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l1-4.jpg" alt="">
+							<img :src="'.statics/images/m3l1-4.jpg'" alt="">
 							<div class="card-content">
 								<strong>Q1:</strong> Refer to Table 1, compare the distance (number of parallel lines) from the mirror of the object with that of the image.
 							</div>
@@ -46,7 +46,7 @@
 					<li>
 						Stack 10 pieces of one-peso coin in front of the plane mirror as in Figure 2. Using a ruler, measure the height and width of the stack of coins. Measure also the height and width of the image as seen on the mirror. Enter your measurements in a table similar to Table 2.
 						<div class="card lesson-card">
-							<img src="/statics/images/m3l1-5.jpg" alt="">
+							<img :src="'.statics/images/m3l1-5.jpg'" alt="">
 							<div class="card-content">
 								Table 2. Height and Weight of Object and Image
 							</div>

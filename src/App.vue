@@ -7,7 +7,7 @@
 	  			<i>menu</i>
 	  		</button>
 	  		<q-toolbar-title :padding="1">
-	  			MIM
+	  			<span class="text-faded">Science 101</span>
 	  		</q-toolbar-title>
 	  	</div>
 	  	<menu-drawer ref="drawer"></menu-drawer>
@@ -32,8 +32,14 @@ export default {
 </script>
 
 <style>
+.layout-header {
+	background: #FFF176;
+}
+.toolbar {
+	background: #FFF176;
+}
 .layout-view {
-  background: #F2C037;
+  background: #FFF59D;
   color: #444;
 }
 </style>

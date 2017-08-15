@@ -18,7 +18,7 @@
 					Radio waves have a very wide range of wavelengths. The whole region of the radio waves is divided into smaller regions or wavebands. Each waveband is allocated by law to a specific radio service. The wavelengths and frequencies of the different wavebands and their uses are shown in the table.
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m2l4.jpg" alt="">
+					<img :src="'./statics/images/m2l4.jpg'" alt="">
 				</div>
 				<p>
 					Low frequency waves are suitable for communication over great distances. But the curvature of the earth limits the range to about 80 kilometers. To extend the range, a repeater is used. The repeater receives the signal and re-transmits it to the receiving station.

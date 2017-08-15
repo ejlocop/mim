@@ -11,16 +11,16 @@
 			<button :disabled="!canSubmit" 
 				class="white right text-primary"
 				@click="submit">
-				Submit <i>send</i>
+				{{ submitText }}
 			</button>
 		</div>
 
 		<div class="layout-view">
 			<div class="layout-padding">
 				<strong>I. Encircle the letter of the BEST ANSWER.</strong>
-				<ol>
+				<ol :class="submitted ? 'submitted' : ''">
 				
-					<li>
+					<li :class="status_1.item1">
 						Materials that are strongly attracted to magnets are _________.
 						<div class="quizzes-card">
 							<label>
@@ -54,7 +54,7 @@
 						</div>
 					</li>
 				
-					<li>
+					<li :class="status_1.item2">
 						What did Michael Faraday discovered?
 						<div class="quizzes-card">
 							<label>
@@ -88,7 +88,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item3">
 						How do you weaken a magnet?
 						<div class="quizzes-card">
 							<label>
@@ -122,7 +122,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item4">
 						A piece of copper cannot be made into a magnet because ___________.
 						<div class="quizzes-card">
 							<label>
@@ -156,7 +156,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item5">
 						How will you decrease the strength of an electromagnet?
 						<div class="quizzes-card">
 							<label>
@@ -190,7 +190,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item6">
 						If the N pole of a magnet is brought near a magnet suspended on a string, the _________.
 						<div class="quizzes-card">
 							<label>
@@ -224,7 +224,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item7">
 						In sending electric energy over long distance, the main cause of energy loss is __________.
 						<div class="quizzes-card">
 							<label>
@@ -258,7 +258,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item8">
 						A material that allows the electromagnet in a motor to move is the ____________. 						
 						<div class="quizzes-card">
 							<label>
@@ -292,7 +292,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item9">
 						A device that turns electric energy into a sound energy is ___________.	<div class="quizzes-card">
 							<label>
 								<q-radio v-model="choices_1.item9" val="a"></q-radio>
@@ -325,7 +325,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item10">
 						A material that is slightly repelled by a magnet is called ______________. 
 						<div class="quizzes-card">
 							<label>
@@ -359,7 +359,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item11">
 						In a magnet the regions of greatest magnetic force are the _______________.
 						<div class="quizzes-card">
 							<label>
@@ -393,7 +393,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item12">
 						A compass needle points to the ________ pole.
 						<div class="quizzes-card">
 							<label>
@@ -427,7 +427,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item13">
 						Clusters of many atoms that can be thought of as tiny magnets are ______________.
 						<div class="quizzes-card">
 							<label>
@@ -461,7 +461,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item14">
 						In a household electric circuit, a short circuit occurs when ______________.
 						<div class="quizzes-card">
 							<label>
@@ -495,7 +495,7 @@
 						</div>
 					</li>
 
-					<li>
+					<li :class="status_1.item15">
 						High potentials are used in long-distance transmission of electricity because ___________
 						<div class="quizzes-card">
 							<label>
@@ -535,8 +535,8 @@
 					II. Match column A with column B
 				</strong>
 
-				<ol>
-					<li>
+				<ol :class="submitted ? 'submitted' : ''">
+					<li :class="status_2.item1">
 						The combined effects of electricity and magnetism 
 						<q-select placeholder="Select Answer" 
 							class="full-width"
@@ -547,7 +547,7 @@
 							value="choices_2.item1">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item2">
 						A magnet in which magnetism is produced by an electric current
 
 						<q-select placeholder="Select Answer" 
@@ -559,7 +559,7 @@
 							value="choices_2.item2">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item3">
 						The creation of a current by a changing magnetic field
 
 						<q-select placeholder="Select Answer" 
@@ -571,7 +571,7 @@
 							value="choices_2.item3">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item4">
 						A machine that changes kinetic energy into electric energy 
 
 						<q-select placeholder="Select Answer" 
@@ -583,7 +583,7 @@
 							value="choices_2.item4">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item5">
 						A machine that changes electric energy into kinetic energy
 
 						<q-select placeholder="Select Answer" 
@@ -595,7 +595,7 @@
 							value="choices_2.item5">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item6">
 						A device that increases or decreases voltage
 
 						<q-select placeholder="Select Answer" 
@@ -607,7 +607,7 @@
 							value="choices_2.item6">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item7">
 						Tiny permanent magnets
 
 						<q-select placeholder="Select Answer" 
@@ -619,7 +619,7 @@
 							value="choices_2.item7">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item8">
 						Magnets made from alloys of aluminum, cobalt and nickel 	
 
 						<q-select placeholder="Select Answer" 
@@ -631,7 +631,7 @@
 							value="choices_2.item8">
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item9">
 						Region in the space around a magnet in which a magnetic force acts on other magnet brought into the region 
 
 						<q-select placeholder="Select Answer" 
@@ -643,7 +643,7 @@
 							value="choices_2.item9">							
 						</q-select>
 					</li>
-					<li>
+					<li :class="status_2.item10">
 						magnet made mostly of iron, with little neodynmium and boron 
 
 						<q-select placeholder="Select Answer" 

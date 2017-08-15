@@ -14,7 +14,7 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Visible Spectrum</strong></p>
 					<v-video :playing="isPlaying" 
-						src="/statics/videos/m2l7.mp4">
+						:src="'./statics/videos/m2l7.mp4'">
 					</v-video>
 				</div>
 			</div>

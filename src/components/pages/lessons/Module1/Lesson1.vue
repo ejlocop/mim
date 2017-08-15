@@ -23,7 +23,7 @@
 					</strong>
 				</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l1.jpg">
+					<img :src="'./statics/images/m1l1.jpg'">
 					<div class="card-content">
 						Pins, needles and nails areattracted to the lodestone
 					</div>

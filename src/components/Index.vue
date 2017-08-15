@@ -18,9 +18,9 @@ export default {
   data () {
     return {
       gallery: [
-        "../statics/1.jpg",
-        "../statics/2.jpg",
-        "../statics/3.jpg"
+        "./statics/1.jpg",
+        "./statics/2.jpg",
+        "./statics/3.jpg"
       ]
     }
   }
