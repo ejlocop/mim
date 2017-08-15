@@ -38,16 +38,46 @@ export default {
 		submit () {
 			let self = this
 			self.showLoading('Please wait...')
-
+			if (!this.submitted) {
+				setTimeout ( () => {
+					self.hideLoading()
+					self.saveAnswers()	
+					self.showResults()
+				}, 2000); 	
+			}
+			else {
+				self.reset()
+			}
+		},
+		reset () {
+			let self = this
 			setTimeout ( () => {
-				self.hideLoading()
-				self.showResults()
-				self.saveAnswers()	
-			}, 2000); 
+					self.hideLoading()
+					LocalStorage.clear(self.storageKey)
+					Dialog.create({
+						title: '<p>Clear</p>',
+					  message: `
+							<p>Results Cleared!</p>
+					  `,
+					  buttons: [
+							{
+								label: "Close",
+								handler: () => {	
+								}
+							},
+							// { // Retake Quiz?
+							// 	label: "Close",
+							// 	handler: () => {	
+							// 	}
+							// },
+					  ]
+					})
+				}, 2000);
 		},
 		showResults () {
 			let self = this;
 			self.submitted = true
+			console.log(self.submitted)
 			Dialog.create({
 				title: '<p>Quiz</p>',
 			  message: `
@@ -109,6 +139,9 @@ export default {
 			})
 
 			return correct1.length + correct2.length
+		},
+		submitText () {
+			return this.submitted ? 'Reset' : 'Submit'
 		},
 		totalItems () {
 			let answers1 = Object.keys(this.answers_1)

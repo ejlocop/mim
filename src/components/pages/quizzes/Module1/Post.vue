@@ -11,7 +11,7 @@
 			<button :disabled="!canSubmit" 
 				class="white right text-primary"
 				@click="submit">
-				Submit <i>send</i>
+				{{ submitText }}
 			</button>
 		</div>
 

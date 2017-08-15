@@ -1,6 +1,6 @@
 <template>
 <div class="layout-view layout-padding">
-	<h5>{{ header }}</h5>
+	<h5 class="text-center">{{ header }}</h5>
 
 	<q-modal ref="lessonModal" 
 		id="lessonModal" 
@@ -62,7 +62,7 @@
 		@closed="compentenciesOpen = false">		
 	</compentencies>
 	
-	<button class="primary block mb-20"
+	<button class="btn block mb-20"
 		@click="compentenciesOpen = true">
 		Learning Competencies
 	</button>
@@ -83,18 +83,18 @@
 	  </lesson>
 	</div>
 
-  <button class="primary block mt-20"
+  <button class="btn block mt-20"
   	@click="openSummary">
   	Let's Summarize!
   </button>
 
-  <button class="primary block mt-20"
+  <button class="btn block mt-20"
   	@click="openQuizzes">
   	Quizzes
   </button>
 
 	<button v-back-to-top.animate="{offset: 500, duration: 200}"
-	  class="warning circular fixed-bottom-right animate-pop"
+	  class="back-to-top shadow-3 hoverable-3 shadow-transition circular fixed-bottom-right animate-pop"
 	  style="margin: 0 15px 15px 0">
 	  <i>keyboard_arrow_up</i>
 	</button>
@@ -271,6 +271,20 @@ export default {
 }
 </script>
 <style lang="scss">
+	button.btn {
+		background: #FFEB3B;
+		box-shadow: 0 1px 3px #FFEB3B, 0 1px 2px #FBC02D !important;
+		color: rgba(100, 100, 100, 1);
+
+		&:active, &:hover {
+			background: #FFF59D;
+		}
+	}
+	.header {
+		h5 {
+			color: #666;
+		}
+	}
 	.timeline {
 		background: white;
 		.timeline-label {
@@ -298,6 +312,12 @@ export default {
 			margin-bottom: 5px;
 			width: 100%;
 			text-align: left;
+			background: #FFF9C4;
+			box-shadow: 0 1px 3px #FFEB3B, 0 1px 2px #FDD835 !important;
+
+			&:active, &:hover {
+				background: #FFF59D;
+			}
 
 			&:not(:last-children) {
 				margin-bottom: 0;
@@ -317,12 +337,16 @@ export default {
 		}
 	}
 
+	.back-to-top {
+		background: #FFF176;
+	}
+
 	.small {
 		font-size: .75em;
 	}
 
 	.modal {
-		&#quizzesModal {
+		&#quizzesModal, &#activityModal {
 			ol {
 				&.submitted {
 					li {

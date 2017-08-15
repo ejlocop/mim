@@ -7,22 +7,22 @@
 			{{ lesson.title }}
 		</div>
 		<div class="timeline-content">
-			<button class="primary small begin" 
+			<button class="shadow-1 small begin" 
 				@click="read">
 				<i>library_books</i> Begin Reading
 			</button>
 			<button v-if="lesson.has_video" 
-				class="primary small" 
+				class="shadow-1 small" 
 				@click="watch">
 				<i>play_circle_outline</i> Watch Video Lesson
 			</button>
 			<button v-if="lesson.has_activity" 
-				class="primary small" 
+				class="shadow-1 small" 
 				@click="activity">
 				<i>mode_edit</i> Begin Activity
 			</button>
 			<button  v-if="lesson.has_assignment" 
-				class="primary small" 
+				class="shadow-1 small" 
 				@click="assignment">
 				<i>school</i> Check Assignment
 			</button>
