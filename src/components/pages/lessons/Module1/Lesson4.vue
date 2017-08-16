@@ -19,7 +19,7 @@
 				</p>
 
 				<div class="card lesson-card">
-					<img :src="'./statics/images'/m1l4.jpg" alt="">
+					<img :src="'./statics/images/m1l4.jpg'" alt="">
 					<div class="card-content">
 						Hans Christian Oersted
 					</div>

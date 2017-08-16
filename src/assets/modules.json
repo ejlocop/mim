@@ -101,7 +101,7 @@
 				"index": 6,
 				"has_video": true,
 				"has_activity": true,
-				"has_assignment": true,
+				"has_assignment": false,
 				"title": "Infrared"
 			},
 			{

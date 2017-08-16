@@ -50,7 +50,7 @@
 					</li>
 				</ol>
 				<div class="card lesson-card">
-					<table>
+					<table border="1" cellpadding="5" cellspacing="0">
 						<tr>
 							<td>Description of Image</td>
 							<td>Distance Between the Object and the Lens (cm)</td>

@@ -13,7 +13,7 @@
 			<div class="layout-padding">
 				<p>Study the following figures:</p>
 				<div class="card lesson-card">
-					<img src="/statics/images/m1l3-8.jpg" alt="">
+					<img :src="'./statics/images/m1l3-8.jpg'" alt="">
 					<div class="card-content">
 						Trace the path of the iron filings in each figure. Explain your observations.
 					</div>

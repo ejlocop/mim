@@ -12,7 +12,7 @@
 		<div class="layout-view">
 			<div class="layout-padding">
 				<div class="video-wrapper">
-					<p class="text-center"><strong>History of Magnetism</strong></p>
+					<p class="text-center"><strong>Radio Waves</strong></p>
 					<v-video :playing="isPlaying" 
 						:src="'./statics/videos/m2l4.mp4'">
 					</v-video>

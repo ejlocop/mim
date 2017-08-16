@@ -14,7 +14,7 @@
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Spherical Mirrors</strong></p>
 					<v-video :playing="isPlaying" 
-						:src="'./statics/videos/m4l4.mp4'">
+						:src="'./statics/videos/m3l4.mp4'">
 					</v-video>
 				</div>
 			</div>

@@ -24,7 +24,7 @@
 				</ul>
 				<div class="card lesson-card">
 					<img :src="'./statics/images/m3l7.jpg'" alt="">
-					<img :src="'./statics/images/m3l7.jpg'" alt="">
+					<img :src="'./statics/images/m3l7-2.jpg'" alt="">
 				</div>
 
 				<strong>The ‘Three Most Useful Rays’ in Lenses</strong>

@@ -345,6 +345,10 @@ export default {
 		font-size: .75em;
 	}
 
+	.video-wrapper {
+		border: 1px solid #444;
+	}
+
 	.modal {
 		&#quizzesModal, &#activityModal {
 			ol {
