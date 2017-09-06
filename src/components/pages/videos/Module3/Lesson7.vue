@@ -16,12 +16,18 @@
 					<v-video :playing="isPlaying" 
 						:src="'./statics/videos/m3l7.mp4'">
 					</v-video>
+					<a href="https://www.youtube.com/watch?v=c6mLLaqLdvg">
+						<i>link</i> https://www.youtube.com/watch?v=c6mLLaqLdvg
+					</a>
 				</div>
 				<div class="video-wrapper">
 					<p class="text-center"><strong>Ray Diagram Part 2</strong></p>
 					<v-video :playing="isPlaying" 
 						:src="'./statics/videos/m3l7-2.mp4'">
 					</v-video>
+					<a href="https://www.youtube.com/watch?v=7iK1nIJs49Y">
+						<i>link</i> https://www.youtube.com/watch?v=7iK1nIJs49Y
+					</a>
 				</div>
 			</div>
 		</div>

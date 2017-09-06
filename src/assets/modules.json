@@ -4,6 +4,7 @@
 		"title": "ELECTRICITY and MAGNETISM",
 		"header_image": "./statics/module-1.png",
 		"header_color": "",
+		"reference": "Grade 10 Science Module",
 		"lessons": [
 			{
 				"index": 1,
@@ -61,6 +62,11 @@
 		"title": "ELECTROMAGNETIC SPECTRUM",
 		"header_image": "./statics/module-2.png",
 		"header_color": "",
+		"reference": "DepEd LRMDS",
+		"reference_sub": {
+			"title": "EASE Module 8: Electromagnetism ",
+			"link": "http://lrmds.deped.gov.ph/pdf-view/6704"
+		},
 		"lessons": [
 			{
 				"index": 1,

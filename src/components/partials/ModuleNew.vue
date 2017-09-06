@@ -347,6 +347,13 @@ export default {
 
 	.video-wrapper {
 		border: 1px solid #444;
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+
+		a {
+			word-wrap: break-word;
+		}
 	}
 
 	.modal {

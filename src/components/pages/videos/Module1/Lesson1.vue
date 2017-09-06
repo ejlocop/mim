@@ -16,6 +16,9 @@
 					<v-video :playing="isPlaying" 
 						:src="'./statics/videos/m1l1.mp4'">
 					</v-video>
+					<a href="https://www.youtube.com/watch?v=BFDszZ8h-5g">
+						<i>link</i> https://www.youtube.com/watch?v=BFDszZ8h-5g
+					</a>
 				</div>
 			</div>
 		</div>

@@ -10,6 +10,9 @@
       to="/modules">
       <button class="primary start-button">Start</button>
     </router-link>
+    <blockquote class="text-left">
+      <small>Materials in this mobile application are owned by their respective copyright holders. </small>
+    </blockquote>
   </div>
 </template>
 
