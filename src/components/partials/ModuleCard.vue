@@ -10,12 +10,12 @@
 		</q-parallax>
 		<div class="card-content">
 			<p>Current Lesson: {{ currentLesson }}</p>
-			<p>Reference: {{ module.reference }}</p>
+			<!-- <p>Reference: {{ module.reference }}</p>
 			<p v-if="module.reference_sub">
 				<a :href="module.reference_sub.link">
 					<span>{{ module.reference_sub.title }}</span>
 				</a>
-			</p>
+			</p> -->
 			<!-- <p>Quiz Score: {{ score }}</p> -->
 		</div>
 	</div>
